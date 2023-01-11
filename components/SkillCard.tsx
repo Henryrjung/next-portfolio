@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const SkillCard = ({ name, img }) => {
+const SkillCard = ({ name, img }: { name: any; img: any }) => {
   return (
     <div className="p-6 duration-300 ease-in bg-gray-300 shadow-xl rounded-xl hover:scale-105">
       <div className="grid items-center justify-center grid-cols-2 gap-4">
