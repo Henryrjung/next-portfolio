@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const ProjectCard = ({ title, background, type, url }) => {
+const ProjectCard = ({ title: any, background, type, url }) => {
   return (
     <div className="relative flex items-center justify-center w-full h-auto duration-300 ease-in shadow-xl shadow-gray-400 rounded-xl group hover:bg-sky-600">
       <Image
