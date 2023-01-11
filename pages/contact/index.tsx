@@ -13,8 +13,8 @@ const Contact = () => {
           Henry Jung | Full-Stack Software Engineer
         </p>
         <p className="py-2 tracking-widest text-center uppercase text-1xl">
-          I'm available for freelance or full time positions. I'm available
-          mon-fri 9-5pm
+          &apos; available for freelance or full time positions. &apos;
+          available mon-fri 9-5pm
         </p>
         <div className="grid gap-8 lg:grid-cols-5">
           {/* <div className="w-full h-full col-span-3 p-4 shadow-xl lg:col-span-2 shadow-gray-400 rounded-xl">
