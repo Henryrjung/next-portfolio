@@ -2,6 +2,44 @@ import Image from "next/image";
 import SkillCard from "../../components/SkillCard";
 
 const Skills = () => {
+  const images = [
+    {
+      name: "hmtl",
+      img: "/../public/assets/skills/html.png",
+    },
+    {
+      name: "css",
+      img: "/../public/assets/skills/css.png",
+    },
+    {
+      name: "javascript",
+      img: "/../public/assets/skills/javascript.png",
+    },
+    {
+      name: "react",
+      img: "/../public/assets/skills/react.png",
+    },
+    {
+      name: "tailwind",
+      img: "/../public/assets/skills/tailwind.png",
+    },
+    {
+      name: "next.js",
+      img: "/../public/assets/skills/nextjs.png",
+    },
+    {
+      name: "sass",
+      img: "/../public/assets/skills/sass.png",
+    },
+    {
+      name: "node",
+      img: "/../public/assets/skills/node.png",
+    },
+    {
+      name: "mongo",
+      img: "/../public/assets/skills/mongo.png",
+    },
+  ];
   return (
     <div id="skills" className="w-full p-2 py-20 lg:h-screen snap-start">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
@@ -9,7 +47,12 @@ const Skills = () => {
           Skills
         </p>
         <div className="grid gap-8 md:grid-cols-3 lg:grid-cols-4 ">
-          <SkillCard name="html" img="/../public/assets/skills/html.png" />
+          {images.map((image) => {
+            return (
+              <SkillCard name={image.name} img={image.img} key={image.name} />
+            );
+          })}
+          {/* <SkillCard name="html" img="/../public/assets/skills/html.png" />
           <SkillCard name="css" img="/../public/assets/skills/css.png" />
           <SkillCard
             name="javascript"
@@ -29,7 +72,7 @@ const Skills = () => {
             name="material ui"
             img="/../public/assets/skills/materialui.png"
           />
-          <SkillCard name="heroku" img="/../public/assets/skills/heroku.png" />
+          <SkillCard name="heroku" img="/../public/assets/skills/heroku.png" /> */}
         </div>
       </div>
     </div>

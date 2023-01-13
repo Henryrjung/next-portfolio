@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import ProfilePic from "../../public/assets/about.png";
+
 const About = () => {
   return (
     <div
@@ -22,7 +24,7 @@ const About = () => {
         </div>
         <div className="flex items-center justify-center w-full h-auto p-4 m-auto duration-300 ease-in shadow-xl rounded-xl shadow-gray-400 hover:scale-105">
           <Image
-            src="/../public/assets/about.png"
+            src={ProfilePic}
             alt="/"
             width="400"
             height="200"
