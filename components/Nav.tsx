@@ -5,6 +5,8 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
+import Logo from "../public/assets/logo.png";
+
 const Nav = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -30,12 +32,7 @@ const Nav = () => {
       }
     >
       <div className="flex items-center justify-between w-full h-full px-2 2xl:px-16">
-        <Image
-          src="/../public/assets/logo.png"
-          alt="/"
-          width="125"
-          height="50"
-        />
+        <Image src={Logo} alt="/" width="125" height="50" />
         <div>
           <ul className="hidden md:flex">
             <li className="ml-10 text-sm uppercase duration-300 ease-in hover:border-b hover:border-sky-600">
