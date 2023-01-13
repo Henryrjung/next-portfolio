@@ -16,7 +16,7 @@ const Contact = () => {
           &apos; available for freelance or full time positions. &apos;
           available mon-fri 9-5pm
         </p>
-        <div className="grid gap-8 lg:grid-cols-5">
+        <div className="grid gap-8 px-10 lg:grid-cols-5">
           {/* <div className="w-full h-full col-span-3 p-4 shadow-xl lg:col-span-2 shadow-gray-400 rounded-xl">
             <div className="h-full lg:p-4">
               <div>

@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex items-center w-full p-2 py-16 md:h-screen snap-start"
+      className="flex items-center w-full p-2 px-5 py-16 md:h-screen snap-start"
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
@@ -13,7 +13,7 @@ const About = () => {
           </p>
           <h2 className="py-4 uppercase border-b border-black">About Me</h2>
           <p className="py-2 uppercase">
-            &apos; a full stack software engineer working with the latest
+            I&apos;m a full stack software engineer working with the latest
             libraries writing clean and mobile first code. I have a full stack
             certificate fom KU University and have been writing code for 3
             Years. Feel free to connect with me via social media or my email

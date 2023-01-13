@@ -1,5 +1,6 @@
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+import Link from "next/link";
 
 const Main = () => {
   return (
@@ -22,18 +23,29 @@ const Main = () => {
             form. I look forward to working with you.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
-              <FaLinkedin />
-            </div>
-            <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
-              <FaGithub />
-            </div>
-            <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
-              <FaTwitter />
-            </div>
-            <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
-              <AiOutlineMail />
-            </div>
+            <Link
+              href="https://www.linkedin.com/in/henry-jung-40b46a182/"
+              target="_blank"
+            >
+              <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
+                <FaLinkedin />
+              </div>
+            </Link>
+            <Link href="https://github.com/Henryrjung" target="_blank">
+              <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
+                <FaGithub />
+              </div>
+            </Link>
+            <Link href="https://twitter.com/Henrywebdev" target="_blank">
+              <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
+                <FaTwitter />
+              </div>
+            </Link>
+            <Link href="/contact">
+              <div className="p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
+                <AiOutlineMail />
+              </div>
+            </Link>
           </div>
         </div>
       </div>

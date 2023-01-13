@@ -95,37 +95,48 @@ const Nav = () => {
           </div>
           <div className="flex flex-col py-4">
             <ul className="uppercase">
-              <Link href="/">
+              <Link href="/" onClick={handleNav}>
                 <li className="py-4 text-sm">Home</li>
               </Link>
-              <Link href="/">
+              <Link href="/about" onClick={handleNav}>
                 <li className="py-4 text-sm">About</li>
               </Link>
-              <Link href="/">
+              <Link href="/skills" onClick={handleNav}>
                 <li className="py-4 text-sm">Skills</li>
               </Link>
-              <Link href="/">
+              <Link href="/works" onClick={handleNav}>
                 <li className="py-4 text-sm">Works</li>
               </Link>
-              <Link href="/">
+              <Link href="/contact" onClick={handleNav}>
                 <li className="py-4 text-sm">Contact</li>
               </Link>
             </ul>
             <div className="pt-40">
               <p className="tracking-widest uppercase">Lets Connect</p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
-                  <FaLinkedin />
-                </div>
-                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
-                  <FaGithub />
-                </div>
-                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
-                  <FaTwitter />
-                </div>
-                <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
-                  <AiOutlineMail />
-                </div>
+                <Link
+                  href="https://www.linkedin.com/in/henry-jung-40b46a182/"
+                  target="_blank"
+                >
+                  <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
+                    <FaLinkedin />
+                  </div>
+                </Link>
+                <Link href="https://github.com/Henryrjung" target="_blank">
+                  <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
+                    <FaGithub />
+                  </div>
+                </Link>
+                <Link href="https://twitter.com/Henrywebdev" target="_blank">
+                  <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
+                    <FaTwitter />
+                  </div>
+                </Link>
+                <Link href="/contact">
+                  <div className="p-3 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-105">
+                    <AiOutlineMail />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
